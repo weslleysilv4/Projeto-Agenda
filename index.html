@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Agenda de Contatos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <i class="fa-solid fa-address-book"></i><h1>Agenda de Contatos</h1>
+        </header>
+        <section>
+            <form class="inputs" id="agenda">
+                <label for="nome-contato">Nome: </label>
+                <input type="text" name="nome-contato" id="nome-contato" placeholder="Nome do Contato" required>
+                <label for="telefone">Número: </label>
+                <input type="tel" name="telefone" id="numero-contato" placeholder="(XX) XXXX-XXXX" maxlength="11"  data-js="phone" required>
+                <button id="button-1" type="submit">Salvar Contato</button>
+            </form>
+            <div class="table-inf">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><i class="fa-solid fa-user"></i> Nome</th>
+                            <th><i class="fa-solid fa-phone"></i> Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div id="span-erro">
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/60125727cb.js" crossorigin="anonymous"></script>
+</body>
+</html>
